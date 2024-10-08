@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William's Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img id="profileImage" src="https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1728373193955_52422b33.webp" alt="Profile Picture">
+            <h2>William</h2>
+        </div>
+        <div class="sidebar">
+            <div class="contacts">
+                <h3>Contacts</h3>
+                <button onclick="window.open('https://www.joyland.ai/profile?userId=qqLpw&ref=qqLpw', '_blank')">Joyland Account</button>
+                <button onclick="window.open('https://www.reddit.com/user/Pitiful-Support2688/', '_blank')">Reddit Account</button>
+                <button onclick="window.open('https://discord.com/users/1096100702029369364', '_blank')">Discord Account</button>
+            </div>
+            <div class="help">
+                <h3>Help</h3>
+                <p>Contact William through Discord to get a free bot creation. Please fill out the following details:</p>
+                <div class="form-group">
+                    <label>Name:</label>
+                    <input type="text" id="name" placeholder="___">
+                </div>
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <input type="text" id="gender" placeholder="___">
+                </div>
+                <div class="form-group">
+                    <label>Age:</label>
+                    <input type="text" id="age" placeholder="___">
+                </div>
+                <div class="form-group">
+                    <label>Personality:</label>
+                    <input type="text" id="personality" placeholder="___">
+                </div>
+                <div class="form-group">
+                    <label>Greeting:</label>
+                    <input type="text" id="greeting" placeholder="___">
+                </div>
+                <p>Also send an image to William so that he could know what the character looks like.</p>
+                <button id="copyButton">Copy Text</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

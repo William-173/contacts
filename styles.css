@@ -1,0 +1,111 @@
+body {
+    background: linear-gradient(to right, #000000, #7F00FF);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start; /* Align items at the start */
+    width: 80%;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the profile image and name */
+    margin-right: 20px; /* Space between profile and sidebar */
+}
+
+#profileImage {
+    width: 150px; /* Set width for profile image */
+    height: 150px; /* Set height for profile image */
+    border-radius: 50%; /* Make the image round */
+    animation: glitch 1s infinite alternate, shake 0.2s infinite; /* Add shake animation */
+}
+
+.sidebar {
+    flex: 1; /* Take up the remaining space */
+}
+
+.contacts, .help {
+    background: rgba(255, 255, 255, 0.1); /* Slightly visible background for sections */
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px; /* Space between sections */
+}
+
+h3 {
+    margin-bottom: 10px; /* Space below section headings */
+}
+
+button {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0; /* Space between buttons */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #7F00FF;
+    box-shadow: 0 0 10px purple; /* Glowing effect on hover */
+}
+
+.form-group {
+    margin: 10px 0; /* Space between form elements */
+}
+
+input {
+    width: calc(100% - 10px); /* Full width minus padding */
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+/* Glitch Animation */
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-5px, -5px);
+    }
+    40% {
+        transform: translate(5px, 5px);
+    }
+    60% {
+        transform: translate(-3px, -3px);
+    }
+    80% {
+        transform: translate(3px, 3px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+/* Shake Animation */
+@keyframes shake {
+    0% { transform: translate(0); }
+    10% { transform: translate(-10px, 0); }
+    20% { transform: translate(10px, 0); }
+    30% { transform: translate(-10px, 0); }
+    40% { transform: translate(10px, 0); }
+    50% { transform: translate(-10px, 0); }
+    60% { transform: translate(10px, 0); }
+    70% { transform: translate(-10px, 0); }
+    80% { transform: translate(10px, 0); }
+    90% { transform: translate(-10px, 0); }
+    100% { transform: translate(0); }
+}
